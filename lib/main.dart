@@ -115,10 +115,10 @@ class _MainPageState extends State<MainPage> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(travelList[_selectedIndex].name,style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,fontSize: 20),),
-                        SizedBox(height: 8,),
+                        const SizedBox(height: 8,),
                         Row(
                           children: [
-                            Icon(CupertinoIcons.placemark_fill,color: Colors.white,),
+                            const Icon(CupertinoIcons.placemark_fill,color: Colors.white,),
                             Text(travelList[_selectedIndex].location,style: TextStyle(color: Colors.white,fontWeight: FontWeight.normal,fontSize: 16)),
                           ],
                         )
@@ -150,7 +150,7 @@ class _MainPageState extends State<MainPage> {
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.spaceAround,
                               children: [
-                                Text("Distance",style: TextStyle(fontWeight: FontWeight.bold),),
+                                const Text("Distance",style: TextStyle(fontWeight: FontWeight.bold),),
                                 Text(travelList[_selectedIndex].distance + " Km "),
                               ],
                             ),
@@ -168,7 +168,7 @@ class _MainPageState extends State<MainPage> {
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.spaceAround,
                               children: [
-                                Text("Temp",style: TextStyle(fontWeight: FontWeight.bold),),
+                                const Text("Temp",style: TextStyle(fontWeight: FontWeight.bold),),
                                 Text(travelList[_selectedIndex].temp + " \u00B0C "),
                               ],
                             ),
@@ -186,7 +186,7 @@ class _MainPageState extends State<MainPage> {
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.spaceAround,
                               children: [
-                                Text("Rating",style: TextStyle(fontWeight: FontWeight.bold),),
+                                const Text("Rating",style: TextStyle(fontWeight: FontWeight.bold),),
                                 Text(travelList[_selectedIndex].rating),
                               ],
                             ),
